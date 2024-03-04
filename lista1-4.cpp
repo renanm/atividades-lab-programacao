@@ -9,7 +9,7 @@ pi = 4 - (4/3) + (4/5) - (4/7) + (4/9) - (4/11) + ....
 
 main() {
 	int numeroTermos;
-	float pi = 4.0;
+	float pi = 0, numerador = 4.0, denominador = 1.0;
 	
 	printf("Informe o numero de termos para calcular pi:\n");
 	scanf("%d", &numeroTermos);
@@ -19,12 +19,10 @@ main() {
 		scanf("%d", &numeroTermos);
 	}
 	
-	for (int i = 2; i <= numeroTermos; i++) {
-		if (i % 2 == 0) {
-			pi -= (4.0/(i*2 + 1));
-		} else {
-			pi += (4.0/(i*2 + 1));
-		}
+	for (int i = 1; i <= numeroTermos; i++) {
+		pi += (numerador/denominador);
+		numerador *= -1;
+		denominador += 2;
 	}
 	
 	printf("Pi: %f", pi);
