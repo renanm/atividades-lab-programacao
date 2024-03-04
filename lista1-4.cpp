@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /*
-4) Crie um algoritmo para calcular o número pi a partir da série infinita abaixo. 
-O algoritmo deve receber o número de termos que serão utilizados para 
+4) Crie um algoritmo para calcular o nÃºmero pi a partir da sÃ©rie infinita abaixo. 
+O algoritmo deve receber o nÃºmero de termos que serÃ£o utilizados para 
 calcular ??
 pi = 4 - (4/3) + (4/5) - (4/7) + (4/9) - (4/11) + ....
 */
@@ -19,11 +19,11 @@ main() {
 		scanf("%d", &numeroTermos);
 	}
 	
-	for (int i = 1; i <= numeroTermos; i++) {
+	for (int i = 2; i <= numeroTermos; i++) {
 		if (i % 2 == 0) {
-			pi += (4.0/(i*2 + 1));
-		} else {
 			pi -= (4.0/(i*2 + 1));
+		} else {
+			pi += (4.0/(i*2 + 1));
 		}
 	}
 	
