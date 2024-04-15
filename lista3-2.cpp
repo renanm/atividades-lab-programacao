@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/* 2. Faça um programa com uma função que recebe um número inteiro, verifica e retorna 1
-se o número recebido é par e 0 se o número recebido é ímpar. */
+/* 2. FaÃ§a um programa com uma funÃ§Ã£o que recebe um nÃºmero inteiro, verifica e retorna 1
+se o nÃºmero recebido Ã© par e 0 se o nÃºmero recebido Ã© Ã­mpar. */
 
 int verificaPar(int num) {
 	if (num % 2 == 0) {
